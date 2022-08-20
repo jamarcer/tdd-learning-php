@@ -4,4 +4,4 @@
 
 ## Fizz Buzz
 
-[Good kata to start learning TDD](fizz-buz/README)
+[Good kata to start learning TDD](fizz-buz)
