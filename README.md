@@ -62,10 +62,17 @@ Good kata to start learning TDD
 
 # TDD
 
-The next image shows the TDD cycle
+TDD is bassed in RED - GREEN - REFACTOR cycle. 
 
 ![TDD cycle](https://blog.codium.team/img/tdd-cycle.png)
 
+When doing TDD I will respect the following rules:
+
+- Write a test that fails before adding business logic.
+- Do not write more production code than necessary to pass a unit test.
+- Do not refactor if I have a test in red.
+
+## Development notes
 
 I will use these emojis in commit messages to show the steps of the cycle
 
