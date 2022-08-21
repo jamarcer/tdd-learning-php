@@ -1,4 +1,4 @@
-# Learning tdd using php
+# Learning TDD using PHP
 
 # Environment
 
