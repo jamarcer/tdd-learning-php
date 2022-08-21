@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  phpcli:
+    build: ./.docker/php8.1/
+    volumes:
+      - ./katas:/opt/project
+    tty: true

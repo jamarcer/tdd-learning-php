@@ -1,0 +1,3 @@
+.idea/
+/katas/vendor/
+/katas/*/.phpunit.result.cache
