@@ -59,3 +59,16 @@ For more information, read the README file in each kata folder.
 ## Fizz Buzz
 
 Good kata to start learning TDD
+
+# TDD
+
+The next image shows the TDD cycle
+
+![TDD cycle](https://blog.codium.team/img/tdd-cycle.png)
+
+
+I will use these emojis in commit messages to show the steps of the cycle
+
+- 🔴: tests fails
+- 🟢: test passes
+- 🔵: refactor
