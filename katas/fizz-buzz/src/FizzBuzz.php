@@ -17,6 +17,9 @@ class FizzBuzz
         if (3 === $position) {
             return 'Fizz';
         }
+        if (5 === $position) {
+            return 'Buzz';
+        }
 
         return '';
     }
