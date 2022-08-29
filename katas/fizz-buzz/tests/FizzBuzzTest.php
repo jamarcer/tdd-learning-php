@@ -49,9 +49,21 @@ class FizzBuzzTest extends TestCase
         $this->assertEquals('FizzBuzz', $this->kata()->elementAtPosition(30));
     }
 
+    public function test_that_the_output_of_the_first_twenty_elements_is_correct(): void
+    {
+        $this->assertEquals($this->expectedOutputForTheFistTwentyElements(), $this->kata()->forTheRange(1, 20))
+;    }
+
     private function kata(): FizzBuzz
     {
         return new FizzBuzz();
+    }
+
+    private function expectedOutputForTheFistTwentyElements(): array
+    {
+        return [
+            1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz',
+        ];
     }
 }
 

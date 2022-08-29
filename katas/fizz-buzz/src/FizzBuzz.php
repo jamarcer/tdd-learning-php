@@ -26,4 +26,9 @@ class FizzBuzz
 
         return '';
     }
+
+    public function forTheRange(int $initialPosition, int $finalPosition): array
+    {
+        return [];
+    }
 }
