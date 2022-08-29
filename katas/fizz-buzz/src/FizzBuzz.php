@@ -11,6 +11,10 @@ class FizzBuzz
         if (1 === $position) {
             return '1';
         }
+        if (2 === $position) {
+            return '2';
+        }
+
         return '';
     }
 }
