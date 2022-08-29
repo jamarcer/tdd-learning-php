@@ -6,13 +6,13 @@ namespace FizzBuzz;
 
 class FizzBuzz
 {
-    public function elementAtPosition(int $position): string
+    public function elementAtPosition(int $position): int|string
     {
         if (1 === $position) {
-            return '1';
+            return 1;
         }
         if (2 === $position) {
-            return '2';
+            return 2;
         }
         if ((0 === $position % 3) && (0 === $position % 5)) {
             return 'FizzBuzz';
@@ -24,11 +24,16 @@ class FizzBuzz
             return 'Buzz';
         }
 
-        return '';
+        return $position;
     }
 
     public function forTheRange(int $initialPosition, int $finalPosition): array
     {
-        return [];
+        $output = [];
+        foreach (range($initialPosition, $finalPosition) as $position) {
+            $output[] = $this->elementAtPosition($position);
+        }
+
+        return $output;
     }
 }
