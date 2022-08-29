@@ -6,5 +6,8 @@ namespace FizzBuzz;
 
 class FizzBuzz
 {
-
+    public function elementAtPosition(int $position): string
+    {
+        return '';
+    }
 }

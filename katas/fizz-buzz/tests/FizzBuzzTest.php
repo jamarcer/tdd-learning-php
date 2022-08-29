@@ -9,10 +9,14 @@ use PHPUnit\Framework\TestCase;
 
 class FizzBuzzTest extends TestCase
 {
-    public function test_it_should_assert_something()
+    public function test_that_first_element_in_the_outout_is_1()
     {
-        $kata = new FizzBuzz();
-        $this->assertInstanceOf(FizzBuzz::class, $kata);
+        $this->assertEquals(1, $this->kata()->elementAtPosition(1));
+    }
+
+    private function kata(): FizzBuzz
+    {
+        return new FizzBuzz();
     }
 }
 
