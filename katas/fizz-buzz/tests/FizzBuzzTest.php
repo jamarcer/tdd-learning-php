@@ -19,6 +19,11 @@ class FizzBuzzTest extends TestCase
         $this->assertEquals(2, $this->kata()->elementAtPosition(2));
     }
 
+    public function test_that_third_element_in_the_outout_is_fizz(): void
+    {
+        $this->assertEquals('Fizz', $this->kata()->elementAtPosition(3));
+    }
+
     private function kata(): FizzBuzz
     {
         return new FizzBuzz();
