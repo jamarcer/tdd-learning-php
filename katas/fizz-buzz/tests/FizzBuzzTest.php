@@ -34,6 +34,12 @@ class FizzBuzzTest extends TestCase
         $this->assertEquals('FizzBuzz', $this->kata()->elementAtPosition(15));
     }
 
+    public function test_that_if_position_number_is_multiples_of_three_print_fizz(): void
+    {
+        $this->assertEquals('Fizz', $this->kata()->elementAtPosition(9));
+
+    }
+
     private function kata(): FizzBuzz
     {
         return new FizzBuzz();
