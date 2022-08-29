@@ -14,7 +14,7 @@ class FizzBuzz
         if (2 === $position) {
             return '2';
         }
-        if (15 === $position) {
+        if ((0 === $position % 3) && (0 === $position % 5)) {
             return 'FizzBuzz';
         }
         if (0 === $position % 3) {
