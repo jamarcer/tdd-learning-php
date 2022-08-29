@@ -8,32 +8,15 @@ class FizzBuzz
 {
     public function elementAtPosition(int $position): int|string
     {
-        if (1 === $position) {
-            return 1;
-        }
-        if (2 === $position) {
-            return 2;
-        }
-        if ((0 === $position % 3) && (0 === $position % 5)) {
-            return 'FizzBuzz';
-        }
-        if (0 === $position % 3) {
-            return 'Fizz';
-        }
-        if (0 === $position % 5) {
-            return 'Buzz';
-        }
+        if (0 === $position % 15) return 'FizzBuzz';
+        if (0 === $position % 3)  return 'Fizz';
+        if (0 === $position % 5)  return 'Buzz';
 
         return $position;
     }
 
     public function forTheRange(int $initialPosition, int $finalPosition): array
     {
-        $output = [];
-        foreach (range($initialPosition, $finalPosition) as $position) {
-            $output[] = $this->elementAtPosition($position);
-        }
-
-        return $output;
+        return array_map([$this, 'elementAtPosition'], range($initialPosition,$finalPosition));
     }
 }
