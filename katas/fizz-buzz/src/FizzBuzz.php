@@ -14,14 +14,14 @@ class FizzBuzz
         if (2 === $position) {
             return '2';
         }
-        if (3 === $position) {
-            return 'Fizz';
-        }
         if (5 === $position) {
             return 'Buzz';
         }
         if (15 === $position) {
             return 'FizzBuzz';
+        }
+        if (0 === $position % 3) {
+            return 'Fizz';
         }
 
         return '';
