@@ -11,6 +11,9 @@ class FizzBuzzStage2
         if (0 === $position % 3) {
             return 'Fizz';
         }
+        if (0 === $position % 5) {
+            return 'Buzz';
+        }
         $positionString = (string)$position;
         for ($i = 0, $iMax = strlen($positionString); $i < $iMax; $i++) {
             if ('3' === $positionString[$i]) {
