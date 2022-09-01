@@ -19,6 +19,9 @@ class FizzBuzzStage2
             if ('3' === $positionString[$i]) {
                 return 'Fizz';
             }
+            if ('5' === $positionString[$i]) {
+                return 'Buzz';
+            }
         }
 
         return $position;
