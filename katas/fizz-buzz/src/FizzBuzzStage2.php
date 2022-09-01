@@ -8,6 +8,9 @@ class FizzBuzzStage2
 {
     public function elementAtPosition(int $position): int|string
     {
+        if (0 === $position % 15) {
+            return 'FizzBuzz';
+        }
         if (0 === $position % 3) {
             return 'Fizz';
         }
