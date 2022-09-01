@@ -24,6 +24,11 @@ class FizzBuzzStage2Test extends TestCase
         $this->assertEquals('Buzz', $this->kata()->elementAtPosition(5));
     }
 
+    public function test_that_if_position_number_has_a_five_in_it_print_fizz(): void
+    {
+        $this->assertEquals('Buzz', $this->kata()->elementAtPosition(56));
+    }
+
     private function kata(): FizzBuzzStage2
     {
         return new FizzBuzzStage2();
