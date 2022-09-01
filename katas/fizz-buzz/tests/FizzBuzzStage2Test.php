@@ -81,7 +81,7 @@ class FizzBuzzStage2Test extends TestCase
             32 => 'Fizz',
             33 => 'Fizz',
             34 => 'Fizz',
-            35 => 'Buzz',
+            35 => 'FizzBuzz',
             36 => 'Fizz',
             37 => 'Fizz',
             38 => 'Fizz',
